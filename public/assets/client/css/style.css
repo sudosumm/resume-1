@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+   font-family: IRANSans;
+   font-style: normal;
+   font-weight: bold;
+   src: url('../fonts/eot/IRANSansWeb_Bold.eot');
+   src: url('../fonts/eot/IRANSansWeb_Boldd41d.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+   url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+   url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+   url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+   font-family: IRANSans;
+   font-style: normal;
+   font-weight: normal;
+   src: url('../fonts/eot/IRANSansWeb.eot');
+   src: url('../fonts/eot/IRANSansWebd41d.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+   url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+   url('../fonts/woff/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+   url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+*:not(i) {
+	font-family: IRANsans !important;
+}
+body {
+	direction: rtl;
+	background-image: url("../img/keyboard-338505_1920_1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.navbar {
+	background-color: rgba(255, 255,255,0.9) !important;
+	color: #060128 !important;
+}
+a {
+	color: #003D83 !important;
+	text-decoration: none !important;
+}
+a:hover {
+	color: black !important;
+}
+li {
+	border-radius: 8px !important;
+	transition: all 0.4s ease;
+}
+li:hover {
+	background-color: rgba(150,150,150,0.8) !important;
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.home {
+	background-color: rgba(255,255,255,0.4) !important;
+	margin-top: 150px !important;
+	padding: 20px !important;
+	border-radius: 10px !important;
+	animation-name: homepic;
+	animation-duration: 3s;
+}
+@keyframes homepic {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.cardhome , .card {
+	background-color: transparent !important;
+	border: transparent !important;
+}
+.card-body img {
+	cursor: pointer !important;
+}
+hr {
+	border: 1px solid #929292;
+}
+#sample .card-body {
+	border-radius: 15px !important;
+	transition: all 0.3s ease;
+}
+#sample .card-body:hover {
+	background-color: rgba(0,0,0,0.4) !important;
+}
+.rtlcopy {
+	border: 0.5px solid #595959;
+	border-radius: 5px !important;
+	padding: 0px 1.5px !important;
+	text-decoration: none !important;
+	color: #240B0B !important;
+}
+.bg-dark {
+	background-color: #616060 !important;
+}
+.modal-contact {
+	background-color: rgba(255,255,255,0.78) !important;
+}
+#contact_us button {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.45) !important;
+}
+textarea {
+	resize: none !important;
+	overflow-y: scroll !important;
+}
+.btn-outline-dark {
+	background: rgba(255,255,255,0.7) !important;
+}
+.btn-outline-dark:hover {
+	background-color: #343a40 !important;
+}
+.send:active {
+	transform: translateY(5px) !important;
+}
+#tools {
+	width: 35% !important;
+	font-size: 28px !important;
+}
+#tools a {
+	color: black !important;
+}
+.zoom {
+	background-color: rgba(0,0,0,0.8) !important;
+	background-blend-mode: hard-light !important;
+	animation-name: zoom;
+	animation-duration: 0.4s;
+}
+.zoom img {
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.35) !important;
+	margin-top: 15px !important;
+	width: 45% !important;
+}
+@media (max-width:992px){
+	.zoom img {
+		width: 70% !important;
+	}
+}
+.zoom a {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.45) !important;
+}
+@keyframes zoom{
+	from {transform:scale(0);}
+	to {transform: scale(1);}
+}
